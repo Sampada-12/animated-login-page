@@ -1,5 +1,11 @@
-body {
-    /* background-color: aqua; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {  
     background: linear-gradient(to right ,#ff8c00, #ff5f1f);
     display: flex;
     flex-direction: column;
@@ -17,4 +23,71 @@ body {
         position: relative;
         box-shadow: 0 5px 15px rgb(0, 0, 0);
     }
+
+    .form-container{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .sign-up{
+        left: 0;
+        width: 50%;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .sign-in{
+        left: 0;
+        width: 50%;
+        z-index: 2;
+    }
+
+    form{
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 40px;
+        height: 100%;
+
+
+        .social-icons{
+            margin: 20px 0;
+            display: flex;
+	        justify-content: center;
+	        align-items: center;
+            gap: 20px;
+
+            .icons{
+                border: 1px solid #ccc;
+                display: inline-flex;
+	            justify-content: center;
+	            align-items: center;
+	            border-radius: 20%;
+	            margin: 0 3px;
+	            width: 40px;
+                height: 40px;
+            }
+        }
+
+        span{
+            font-size: 12px;
+        }
+
+        input{
+            background-color: #dfdede;
+            border: none;
+	        margin: 8px 0;
+	        padding: 10px 15px;
+	        font-size: 13px;
+	        border-radius: 8px;
+	        width: 100%;
+	        outline: none;
+        }
+        
+    }
+
 }
